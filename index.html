@@ -5,13 +5,39 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Game!</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?version">
-
-
+    <title>Count Game!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?version1">
 </head>
 <body>
-
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">High Scores</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td id="H1">00:00</td>
+        </tr>
+     <tr>
+            <td>2.</td>
+            <td id="H2">00:00</td>
+        </tr>
+     <tr>
+            <td>3.</td>
+            <td id="H3">00:00</td>
+        </tr>
+     <tr>
+            <td>4.</td>
+            <td id="H4">00:00</td>
+        </tr>
+     <tr>
+            <td>5.</td>
+            <td id="H5">00:00</td>
+        </tr>
+    </tbody>
+</table>
 <div class="container">
   <div class="grid">
     <div class="cell" id="1">0</div>
@@ -25,8 +51,8 @@
     <div class="cell" id="9">0</div>
     <div class="cell" id="10">0</div>
     <div class="cell" id="11">0</div>
-    <div class="cell" id="12" >0</div>
-      <div class="cell" id="13">0</div>
+    <div class="cell" id="12">0</div>
+    <div class="cell" id="13">0</div>
     <div class="cell" id="14">0</div>
     <div class="cell" id="15">0</div>
     <div class="cell" id="16">0</div>
@@ -36,23 +62,16 @@
     <div class="cell" id="20">0</div>
 
   </div>
-</div>
- <div id="display">
+    <script type="text/javascript" src="script.js"></script>
+    <div id="display">
       00:00:00
     </div>
- <!--   <div class="button">
-        <button class="favorite styled"
-        type="button">
-    New Game
-</button>
-      <button id="startstop" onclick="startstop()">Start</button>
-      <button id="New Game" onclick="newgame()">New Game</button> -->
 <button class="favorite styled"
         type="button"
 onclick="newgame()">
-    New Game
+   New Game
 </button>
-<script type="text/javascript" src="script.js"></script>
+  </div>
 
 </body>
 </html>
